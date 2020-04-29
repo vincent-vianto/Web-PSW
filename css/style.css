@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .primary {
@@ -49,17 +49,12 @@ body {
   margin-top: 25px;
 }
 
-.jumbotron-fluid {
-  padding: 100px;
+.bg-cover {
   background-image: url(../img/top.jpg);
-  width: 100%;
-  height: 416px;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-}
-
-.container {
-  opacity: 100%;
+  height: 800px;
 }
 
 .card-group {
@@ -74,6 +69,7 @@ body {
   width: fit-content;
   height: fit-content;
   margin-top: 15%;
+  width: 100%;
 }
 
 #content {
@@ -83,4 +79,8 @@ body {
   bottom: 0;
   top: 20px;
   overflow: hidden;
+}
+
+.form-control .comment{
+  height: 400px;
 }
