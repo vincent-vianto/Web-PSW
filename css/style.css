@@ -47,7 +47,7 @@ body {
   padding: 12px;
 }
 
-.jumbotron {
+.bg-custom {
   background-color: transparent;
   padding: 100px;
 }
@@ -87,6 +87,8 @@ body {
 
 .kartu {
   color: red;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card-body {
@@ -136,4 +138,15 @@ body {
 
 .stayhome { 
   color: yellow;
+}
+
+.d-md-block{
+  background-color: rgba(0, 0, 0, 0.788);
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.carousel-item img{
+  height: 500px;
 }
