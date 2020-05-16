@@ -7,19 +7,36 @@ body {
   padding: 0;
   margin-top: 70px;
 }
+.header {
+  font-weight: bold;
+}
 
 .primary {
-  background-image: linear-gradient(#eb3530, #cf3538, #b03541, #8e344b, #7b3451, #50335e, #3d3363, #333366);
+  background-image: linear-gradient(
+    #eb3530,
+    #cf3538,
+    #b03541,
+    #8e344b,
+    #7b3451,
+    #50335e,
+    #3d3363,
+    #333366
+  );
   height: 3000px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.contact {
-  background-color: #eb3530;
+.about {
+  background-color: #d11c2f;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
 
+.contact {
+  background-color: #d11c2f;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
@@ -30,6 +47,21 @@ body {
   padding: 12px;
 }
 
+.jumbotron {
+  background-color: transparent;
+  padding: 100px;
+}
+
+.pads {
+  padding-left: 100px;
+  padding-right: 100px;
+  color: black;
+  text-align: center;
+}
+
+.img-read {
+  width: 75%;
+}
 .secondary h1 {
   color: rgba(71, 13, 13, 0.815);
   text-shadow: 0px 7.5px 0.05px #dc4848;
@@ -41,6 +73,10 @@ body {
   font-size: auto;
 }
 
+.marg {
+  margin-top: 100px;
+}
+
 .col-xl-3 {
   font-size: 15pt;
 }
@@ -49,12 +85,12 @@ body {
   margin-top: 25px;
 }
 
-.bg-cover {
-  background-image: url(../img/top.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
+.kartu {
+  color: red;
+}
+
+.card-body {
+  display: block;
 }
 
 .card-group {
@@ -81,6 +117,23 @@ body {
   overflow: hidden;
 }
 
-.form-control .comment{
-  height: 400px;
+.comment {
+  resize: none;
+}
+
+.indonesia {
+  color: rgb(255, 254, 254);
+}
+
+.berterimakasih {
+  color: yellow;
+}
+
+.dot {
+  color: white;
+  display: inline;
+}
+
+.stayhome { 
+  color: yellow;
 }
