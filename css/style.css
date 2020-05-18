@@ -38,8 +38,16 @@ body {
   /* sini bagian about */
 }
 
+.card {
+  margin: 0 auto;
+  padding: 40px;
+  flex: auto;
+  display: block;
+  text-align: center;
+}
+
 .contact {
-  background-color: #d11c2f;
+  background-color: #ffffff;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   /* sini ganti bagian contact */
@@ -57,7 +65,6 @@ body {
   background-color: transparent;
   padding: 100px;
 }
-
 
 .img-read {
   width: 75%;
@@ -100,7 +107,7 @@ body {
 }
 
 .box-purple {
-  background-color: #642b75;
+  background-color: #cccccc;
   background-size: cover;
   padding: 20px;
   width: fit-content;
@@ -136,17 +143,17 @@ body {
   display: inline;
 }
 
-.stayhome { 
+.stayhome {
   color: yellow;
 }
 
-.d-md-block{
+.d-md-block {
   background-color: rgba(0, 0, 0, 0.788);
   padding: 40px;
   color: white;
   text-align: center;
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 500px;
 }
