@@ -1,3 +1,6 @@
+/* nnti baca bagian primary,about, contact sama box-purple */
+/* kalau ada masalah tambahin class aj. klw tambah class, dy bakal detect kok */
+
 html {
   scroll-behavior: smooth;
 }
@@ -25,18 +28,21 @@ body {
   height: 3000px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  /* sini bagian home */
 }
 
 .about {
   background-color: #d11c2f;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  /* sini bagian about */
 }
 
 .contact {
   background-color: #d11c2f;
-  color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+  /* sini ganti bagian contact */
 }
 
 .topnav {
@@ -52,12 +58,6 @@ body {
   padding: 100px;
 }
 
-.pads {
-  padding-left: 100px;
-  padding-right: 100px;
-  color: black;
-  text-align: center;
-}
 
 .img-read {
   width: 75%;
@@ -103,11 +103,11 @@ body {
   background-color: #642b75;
   background-size: cover;
   padding: 20px;
-  color: white;
   width: fit-content;
   height: fit-content;
   margin-top: 15%;
   width: 100%;
+  /* sini jga bagian kontak, cuman ini yg bagian bawahnya */
 }
 
 #content {
