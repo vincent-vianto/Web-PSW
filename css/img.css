@@ -1,0 +1,28 @@
+.symptons {
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
+.prevention {
+    width: 500px;
+    height: 450px;
+    padding: 10px;
+    margin: auto;
+}
+
+.worry {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.history {
+    width: 350px;
+    height: 400px;
+    padding: 0%;
+    margin: auto;
+}
