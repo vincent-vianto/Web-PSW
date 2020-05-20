@@ -25,8 +25,8 @@ body {
     #3d3363,
     #333366
   );
-  height: 3000px;
-  color: white;
+  min-height: min-content;
+  color: white ;
   font-family: Arial, Helvetica, sans-serif;
   /* sini bagian home */
 }
@@ -58,12 +58,11 @@ body {
   font-family: "Kievit";
   text-align: center;
   font-size: 17px;
-  padding: 12px;
 }
 
 .bg-custom {
   background-color: transparent;
-  padding: 100px;
+  color: white;
 }
 
 .img-read {
@@ -138,10 +137,6 @@ body {
   color: yellow;
 }
 
-.dot {
-  color: white;
-  display: inline;
-}
 
 .stayhome {
   color: yellow;
@@ -149,7 +144,6 @@ body {
 
 .d-md-block {
   background-color: rgba(0, 0, 0, 0.788);
-  padding: 40px;
   color: white;
   text-align: center;
 }
@@ -157,3 +151,28 @@ body {
 .carousel-item img {
   height: 500px;
 }
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 300px;
+  }
+  
+  .d-md-block {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    text-align: center;
+  }
+  .d-md-block h5{
+    font-size: smaller;
+  }
+
+  .d-md-block p{
+    font-size: xx-small;
+  }
+
+  .d-md-block a{
+    font-size: xx-small;
+  }
+
+ }
