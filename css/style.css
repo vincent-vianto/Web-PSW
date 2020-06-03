@@ -1,4 +1,3 @@
-/* nnti baca bagian primary,about, contact sama box-purple */
 /* kalau ada masalah tambahin class aj. klw tambah class, dy bakal detect kok */
 
 html {
@@ -8,38 +7,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  margin-top: 70px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
   font-weight: bold;
-}
-
-/* SINI BAGIAN HOME */
-.primary {
-  background-image: linear-gradient(
-    #eb3530,
-    #cf3538,
-    #b03541,
-    #8e344b,
-    #7b3451,
-    #50335e,
-    #3d3363,
-    #333366
-  );
-  min-height: min-content;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*.primary {
-  background-color: rgb(255, 255, 255);
-} */
-
-.about {
-  background-color: #d11c2f;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  /* sini bagian about */
 }
 
 .card {
@@ -50,11 +23,8 @@ body {
   text-align: center;
 }
 
-.contact {
-  background-color: #ffffff;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  /* sini ganti bagian contact */
+.contact, .about {
+  margin-top: 80px;
 }
 
 .topnav {
@@ -64,14 +34,14 @@ body {
   font-size: 17px;
 }
 
-.bg-custom {
+.bg-transparent {
   background-color: transparent;
-  color: white;
 }
 
 .img-read {
   width: 75%;
 }
+
 .secondary h1 {
   color: rgba(71, 13, 13, 0.815);
   text-shadow: 0px 7.5px 0.05px #dc4848;
@@ -117,7 +87,6 @@ body {
   height: fit-content;
   margin-top: 15%;
   width: 100%;
-  /* sini jga bagian kontak, cuman ini yg bagian bawahnya */
 }
 
 #content {
@@ -133,16 +102,13 @@ body {
   resize: none;
 }
 
-.indonesia {
-  color: rgb(255, 254, 254);
-}
 
 .berterimakasih {
-  color: yellow;
+  color: rgb(255, 0, 0);
 }
 
 .stayhome {
-  color: yellow;
+  color: rgb(255, 0, 0);
 }
 
 .d-md-block {
@@ -157,17 +123,17 @@ body {
 
 @media (max-width: 576px) {
   .carousel-item img {
-    height: 300px;
+    height: 250px;
   }
 
   .d-md-block {
-    height: 200px;
+    height: 175px;
     background-color: rgba(0, 0, 0, 0.788);
     color: white;
     text-align: center;
   }
   .d-md-block h5 {
-    font-size: smaller;
+    font-size: xx-small;
   }
 
   .d-md-block p {
