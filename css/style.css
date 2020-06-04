@@ -27,11 +27,16 @@ body {
   margin-top: 80px;
 }
 
+.navbar-brand {
+  font-family: "Kievit";
+  font-size: 24px;
+}
+
 .topnav {
   background-color: #333366;
   font-family: "Kievit";
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .bg-transparent {
