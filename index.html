@@ -10,235 +10,349 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//db.onlinewebfonts.com/c/fd732bd7de8c4c02d9250cc4adffd9de?family=Kievit" rel="stylesheet"
         type="text/css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/img.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/animate.css" />
 
-    <title>CovidPedia</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Covidpedia - Home</title>
 </head>
 
-<body class="primary">
-    <div class="containter">
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark mb-3 topnav ">
-            <a class="navbar-brand">
-                <img src="img/logo.png" width="100%">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="#">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="maps.html">Maps &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+<body oncontextmenu="return false;" onload="loading()">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark topnav ">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/virus.svg">
+            &nbsp; Covidpedia
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#"> &nbsp;&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html"> &nbsp;&nbsp;&nbsp;Map &nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"> &nbsp;&nbsp;&nbsp;About &nbsp;&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"> &nbsp;&nbsp;&nbsp;Contact &nbsp;&nbsp;</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-   <div class="jumbotron bg-transparent">
-        <div class="row ml-lg-3">
-            <div class="col-sm-12 col-md-6 pt-5">
-                <h3 class="mb-1 header">Selamat Datang di <strong class="text-danger">CovidPedia</strong>
-                </h3>
-                <p class="lead ">CovidPedia adalah website yang didedikasikan untuk memberikan anda informasi-informasi
-                    mengenai
-                    covid-19.
-                    diambil dari kata "Wikipedia" dan "Covid-19", kami harap CovidPedia dapat menjadi sarana informasi
-                    bermanfaat bagi kita semua.
-                    Stay Healthy
-                </p>
-            </div>
-            <div class="col-sm-12 order-first order-md-0 col-md-6 pl-5">
-                <img style="width: 100%;"src="./img/header-img.png">
+    <div class="jumbotron wow fadeIn" data-wow-delay="0.5s">
+            <div class="container">
+                <div class="row ml-sm-0 ml-md-5">
+                    <div class="col-sm-12 col-md-6 pt-sm-0 pt-md-5">
+                        <h2 class="header text-danger header-md wow FadeIn" data-wow-delay="1s">
+                            Covidpedia
+                        </h2>
+                        <p class="lead mt-3 wow fadeIn" data-wow-delay="1.3s">
+                            Covidpedia adalah situs web yang didedikasikan untuk memberikan informasi-informasi mengenai
+                            COVID-19. Covidpedia berasal dari gabungan kata "Ensiklopedia" dan "COVID-19".
+                            <br>
+                            #DiRumahSaja
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 order-first order-sm-0 wow fadeIn" data-wow-delay="1.3s">
+                        <h2 class="header text-danger ml-2 text-center header-sm">Covidpedia</h2>
+                        <img id="virus-img" src="img/virus.svg" alt="Virus">
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
+        <div class="box-content wow bounceIn" data-wow-delay="1s" data-wow-duration="1.5s">
+            <h1 class="text-center font-weight-bold">
+                <a target="_blank"
+                    href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Waspada
+                    Gejalanya</a>
+            </h1>
 
-    <div class="container">
-        <div class="text-dark">
-            <div class="d-flex flex-column justify-content-center ">
-                <div class="card mt-2 text-left" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="kartu card-title display-5"><a rel="stylesheet"
-                                href="https://www.sehatq.com/penyakit/virus-corona">Symptons</a></h5>
-                        <p class="card-text text-center">Diagnosis tanda-tanda gejala Covid-19</p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="symptons" src="./img/symptons.jpeg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="img/cough.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-6 pt-sm-0 pt-md-5">
+                        <p>
+                            Orang yang terinfeksi COVID-19 menunjukkan berbagai gejala yang dilaporkan - mulai
+                            dari gejala ringan hingga sakit parah.
+                            Gejala dapat muncul <b> 2-14 hari setelah terpapar virus.</b> Orang dengan gejala
+                            berikut berkemungkinan terinfeksi COVID-19:
+                        </p>
+                        <div class="content-md text-center">
+                            <div class="row mt-2">
+                                <div class="col-4 wow slideInLeft" data-wow delay="1.5s" data-wow-duration="1.5s">
+                                    <img class="content-list-img" src="./img/fever.jpg">
+                                    <p>Demam</p>
                                 </div>
-                                <div class="col-sm">
-                                    1. Gejala Umum
-                                    <br>
-                                    Gejala umum meliputi:
-                                    <ul>
-                                        <li>Demam</li>
-                                        <li>Batuk kering</li>
-                                        <li>Sakit tenggorokan</li>
-                                        <li>Sesak napas</li>
-                                        <li>Kelelahan</li>
-                                    </ul>
+                                <div class="col-4 wow bounceInDown" data-wow delay="1.5s" data-wow-duration="1.8s">
+                                    <img class="content-list-img" src="./img/shortness.jpg">
+                                    <p>Sesak Nafas</p>
                                 </div>
-                                <div class="col-sm">
-                                    2. Gejala yang lebih jarang
-                                    <br>
-                                    Ada pula sederet keluhan lain yang lebih jarang terjadi dan menandakan infeksi virus
-                                    corona, seperti :
-                                    <ul>
-                                        <li>mula</li>
-                                        <li>Muntah</li>
-                                        <li>Diare</li>
-                                    </ul>
+                                <div class="col-4 wow slideInRight" data-wow delay="1.5s" data-wow-duration="1.5s">
+                                    <img class="content-list-img" src="./img/batuk.jpg">
+                                    <p>Batuk</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="text-center">
-                            <a class="btn btn-warning mt-4" data-toggle="collapse" href="#collapseExample" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
-                                ReadMore
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mt-3 text-left" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="kartu card-title display-5 "><a
-                                href="https://www.sehatq.com/artikel/mencegah-virus-corona-lakukan-langkah-sederhana-ini">Prevention</a>
-                        </h5>
-                        <p class="card-text text-center">Cara-cara dalam mencegah Covid-19</p>
-                        <div class="collapse" id="collapseExample1">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="prevention" src="./img/prevention.jpg">
+                            <div class="row mt-2">
+                                <div class="col-4 wow slideInLeft" data-wow delay="1.5s" data-wow-duration="1.6s">
+                                    <img class="content-list-img" src="./img/throat.jpg">
+                                    <p>Sakit Tenggorokkan</p>
                                 </div>
-                                <div class="col-sm">
-                                    Beberapa upaya pencegahan penularan virus corona yang dapat Anda lakukan meliputi:
-                                    <br>
-                                    <ul>
-                                        <li>Lebih sering mencuci tangan</li>
-                                        </li>
-                                        <li>Jangan sering menyentuh area mata, hidung, dan mulut</li>
-                                        <li>Memperhatikan kebersihan ketika bersin, batuk, dan membuang ludah</li>
-                                        <li>Mengisolasikan diri</li>
-                                        <li>Menggunakan masker</li>
-                                    </ul>
+                                <div class="col-4 wow rotateIn" data-wow delay="1.5s" data-wow-duration="1.9s">
+                                    <img class="content-list-img" src="./img/flu.jpg">
+                                    <p>Flu</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a class="btn btn-warning mt-4" data-toggle="collapse" href="#collapseExample1"
-                                role="button" aria-expanded="false" aria-controls="collapseExample1">
-                                ReadMore
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mt-3 text-left" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="kartu card-title display-5 "><a
-                                href="https://www.riauonline.co.id/nasional/read/2020/03/31/10-alasan-tak-perlu-takut-hadapi-virus-covid-19">Should
-                                I Worry?</a></h5>
-                        <p class="card-text text-center">Apakah anda harus khawatir dengan Covid-19?</p>
-                        <div class="collapse" id="collapseExample2">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img class="worry" src="./img/worry.jpeg">
-                                </div>
-                                <div class="col-sm">
-                                    Tentunya kita tidak perlu panik, namun tetap harus waspada.
-                                    <br>
-                                    <p>
-                                        Penyakit yang disebabkan infeksi COVID-19 pada umumnya ringan, terutama pada
-                                        anak-anak dan orang dewasa
-                                        muda. Namun, infeksi ini tetap dapat menyebabkan penyakit serius: sekitar 1 dari
-                                        5 orang yang terjangkit
-                                        memerlukan perawatan di rumah sakit. Karenanya, wajar jika orang khawatir
-                                        tentang sulitnya COVID-19
-                                        pada diri mereka dan orang-orang yang mereka kasihi.
-                                        Kita bisa menyalurkan bantuan kita dengan cara melindungi diri kita, orang-orang
-                                        yang kita kasihi dan
-                                        masyarakat kita. Tindakan yang terpenting adalah rajin yang memegang tangan
-                                        tertutup dan tertutup saat
-                                        batuk dan bersin. Selain itu, tetap mengikuti perkembangan informasi dan patuhi
-                                        nasihat dinas kesehatan
-                                        lokal termasuk persetujuan perjalanan, pergerakan dan rapat yang diberlakukan.
-                                    </p>
+                                <div class="col-4 wow slideInRight" data-wow delay="1.5s" data-wow-duration="1.6s">
+                                    <img class="content-list-img" src="./img/headache.jpg">
+                                    <p>Sakit Kepala</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <a class="btn btn-warning mt-4" data-toggle="collapse" href="#collapseExample2" role="button"
-                            aria-expanded="false" aria-controls="collapseExample2">
-                            ReadMore
-                        </a>
-                    </div>
                 </div>
-            </div>
-
-            <div class="card mt-3 text-left" style="width: 100%;">
-                <div class="card-body">
-                    <h5 class="kartu card-title display-5 "><a
-                            href="https://bebas.kompas.id/baca/opini/2020/04/08/sejarah-panjang-virus-korona/">History</a>
-                    </h5>
-                    <p class="card-text text-center">Awal mula terciptanya virus Covid-19</p>
-                    <div class="collapse" id="collapseExample3">
+                <div class="content-sm text-center mb-5">
+                    <div class="collapse mb-5" id="collapseExample">
                         <div class="row">
-                            <div class="col-sm">
-                                <img class="history" src="./img/history.jpg">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/fever.jpg">
+                                <p>Demam</p>
                             </div>
-                            <div class="col-sm">
-                                Sejarah Virus Corona versi Tahun 2019
-                                <br>
-                                <p>
-                                    Wabah terbaru virus korona terjadi sejak akhir tahun 2019, bermula di Wuhan,
-                                    Provinsi Hubei, China.
-                                    Virus diduga bersumber dari kelelawar yang menular ke hewan lain sebelum ”melompat”
-                                    ke manusia.
-                                </p>
-                                <p>
-                                    Meski bentuknya mirip, virus ini memiliki perbedaan karakter sehingga dinamakan
-                                    SARS-CoV-2 yang
-                                    menyebabkan Covid-19 (penyakit akibat virus korona 2019).
-                                </p>
-                                <p>
-                                    Sebagaimana infeksi korona lain, tampilan klinisnya dari tanpa gejala, gangguan
-                                    pernapasan ringan,
-                                    pnumonia sampai gangguan pernapasan parah, gagal ginjal serta kematian. Penularan
-                                    juga lewat percikan cairan dari
-                                    bersin dan batuk. Masa inkubasi sekitar 2-14 hari, rata-rata gejala tampak pada hari
-                                    ke-5.
-                                </p>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/shortness.jpg">
+                                <p>Sesak Nafas</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/batuk.jpg">
+                                <p>Batuk</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/throat.jpg">
+                                <p>Sakit Tenggorokan</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/flu.jpg">
+                                <p>Flu</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/headache.jpg">
+                                <p>Sakit Kepala</p>
                             </div>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <a class="btn btn-warning mt-4" data-toggle="collapse" href="#collapseExample3" role="button"
-                            aria-expanded="false" aria-controls="collapseExample3">
-                            ReadMore
-                        </a>
+                    <a class="btn btn-primary"  data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample" aria-label="Read More">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-content wow bounceIn" data-wow-delay="1.5s" data-wow-duration="1s">
+            <h1 class="text-center font-weight-bold">
+                <a target="_blank"
+                    href="https://www.sehatq.com/artikel/mencegah-virus-corona-lakukan-langkah-sederhana-ini">Cara
+                    Mencegah Penyebaran Covid-19</a>
+            </h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="img/prevention.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-6 pt-sm-0 pt-md-5">
+                        <p> Beberapa upaya pencegahan penularan virus corona yang dapat Anda lakukan meliputi:</p>
+                        <div class="content-md text-center">
+                            <div class="row mt-2">
+                                <div class="col-4 wow slideInLeft" data-wow delay="1.5s" data-wow-duration="1.5s">
+                                    <img class="content-list-img" src="./img/wash.jpg">
+                                    <p>Cuci Tangan</p>
+                                </div>
+                                <div class="col-4 wow rollIn" data-wow delay="1.5s" data-wow-duration="1.8s">
+                                    <img class="content-list-img" src="./img/masker.jpg">
+                                    <p>Pakai masker</p>
+                                </div>
+                                <div class="col-4 wow slideInRight" data-wow delay="1.5s" data-wow-duration="1.5s">
+                                    <img class="content-list-img" src="./img/touch.jpg">
+                                    <p>Jangan Sentuh wajah sembarangan</p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-4 wow slideInLeft" data-wow delay="1.5s" data-wow-duration="1.6s">
+                                    <img class="content-list-img" src="./img/napkin.jpg">
+                                    <p>Tutup mulut dan hidung saat bersin</p>
+                                </div>
+                                <div class="col-4 wow lightSpeedIn" data-wow delay="1.5s" data-wow-duration="1.9s">
+                                    <img class="content-list-img" src="./img/distance.jpg">
+                                    <p>Jaga jarak satu sama lain</p>
+                                </div>
+                                <div class="col-4 wow slideInRight" data-wow delay="1.5s" data-wow-duration="1.6s">
+                                    <img class="content-list-img" src="./img/disinfectant.jpg">
+                                    <p>Pakai desinfektan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sm text-center mb-5">
+                    <div class="collapse mb-5" id="collapseExample2">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/wash.jpg">
+                                <p>Cuci tangan</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/masker.jpg">
+                                <p>Pakai masker</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/touch.jpg">
+                                <p>Jangan sentuh wajah sembarangan</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/napkin.jpg">
+                                <p>Tutup mulut dan hidung saat bersin</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/distance.jpg">
+                                <p>Jaga jarak satu sama lain</p>
+                            </div>
+                            <div class="col-6">
+                                <img class="content-list-img" src="./img/disinfectant.jpg">
+                                <p>Pakai desinfektan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button"
+                        aria-expanded="false" aria-controls="collapseExample2" aria-label="Read More">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-content wow bounceIn" data-wow-delay="1.5s" data-wow-duration="1.5">
+            <h1 class="text-center font-weight-bold">
+                <a target="_blank"
+                    href="https://www.sehatq.com/artikel/mencegah-virus-corona-lakukan-langkah-sederhana-ini">
+                    Apakah Anda Harus Khawatir dengan Covid-19?
+                </a>
+            </h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="img/worry.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-6 pt-sm-0 pt-md-0 pt-lg-5">
+                        <br>
+                        <p class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                            Tentunya kita tidak perlu panik, namun tetap harus waspada.
+                            Penyakit yang disebabkan infeksi COVID-19 pada umumnya ringan, terutama pada
+                            anak-anak dan orang dewasa
+                            muda. Namun, infeksi ini tetap dapat menyebabkan penyakit serius:
+                        </p>
+                        <div class="content-md">
+                            <p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="1s">
+                                sekitar 1 dari 5 orang yang terjangkit
+                                memerlukan perawatan di rumah sakit. Karenanya, wajar jika orang khawatir
+                                tentang sulitnya COVID-19
+                                pada diri mereka dan orang-orang yang mereka kasihi.
+                                Kita bisa menyal urkan bantuan kita dengan cara melindungi diri kita, orang-orang
+                                yang kita kasihi dan
+                                masyarakat kita.Tindakan yang terpenting adalah rajin yang memegang tangan
+                                tertutup dan tertutup saat
+                                batuk dan bersin. Selain itu, tetap mengikuti perkembangan informasi dan patuhi
+                                nasihat dinas kesehatan
+                                lokal termasuk persetujuan perjalanan, pergerakan dan rapat yang diberlakukan.
+                            </p>
+                        </div>
+                        <div class="content-sm mb-5">
+                            <p class="collapse" id="collapseExample3">
+                                sekitar 1 dari 5 orang yang terjangkit
+                                memerlukan perawatan di rumah sakit. Karenanya, wajar jika orang khawatir
+                                tentang sulitnya COVID-19
+                                pada diri mereka dan orang-orang yang mereka kasihi.
+                                Kita bisa menyal urkan bantuan kita dengan cara melindungi diri kita, orang-orang
+                                yang kita kasihi dan
+                                masyarakat kita.Tindakan yang terpenting adalah rajin yang memegang tangan
+                                tertutup dan tertutup saat
+                                batuk dan bersin. Selain itu, tetap mengikuti perkembangan informasi dan patuhi
+                                nasihat dinas kesehatan
+                                lokal termasuk persetujuan perjalanan, pergerakan dan rapat yang diberlakukan.
+                            </p>
+                            <div class="text-center">
+                                <a class="btn btn-primary"  data-toggle="collapse" href="#collapseExample3" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample3" aria-label="Read More">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="box-content wow bounceIn" data-wow-delay="1.5s" data-wow-duration="1.5s">
+            <h1 class="text-center font-weight-bold">
+                <a target="_blank" href="https://bebas.kompas.id/baca/opini/2020/04/08/sejarah-panjang-virus-korona/">History</a>
+            </h1>
 
-        <div class="marg justify-content-center">
-            <h3 class="text-center font-weight-bold"> INFORMASI COVID</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 ">
+                        <img class="mt-sm-0 mt-md-5" src="img/history.jpg" id="history">
+                    </div>
+                    <div class="col-sm-12 col-md-6 pt-sm-0 pt-md-0 pt-lg-5">
+                        Sejarah Virus Corona versi Tahun 2019
+                        <br><br>
+                        <p class="wow fadeIn" data-wow-delay="1s" data-wow-duration="1.5s">
+                            Wabah terbaru virus korona terjadi sejak akhir tahun 2019, bermula di Wuhan,
+                            Provinsi Hubei, China.
+                            Virus diduga bersumber dari kelelawar yang menular ke hewan lain sebelum ”melompat”
+                            ke manusia.
+                        </p>
+                        <p class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">
+                            Meski bentuknya mirip, virus ini memiliki perbedaan karakter sehingga dinamakan
+                            SARS-CoV-2 yang
+                            menyebabkan Covid-19 (penyakit akibat virus korona 2019).
+                        </p>
+                        <p class="wow fadeIn" data-wow-delay="1.8s" data-wow-duration="2s">
+                            Sebagaimana infeksi korona lain, tampilan klinisnya dari tanpa gejala, gangguan
+                            pernapasan ringan,
+                            pnumonia sampai gangguan pernapasan parah, gagal ginjal serta kematian. Penularan
+                            juga lewat percikan cairan dari
+                            bersin dan batuk. Masa inkubasi sekitar 2-14 hari, rata-rata gejala tampak pada hari
+                            ke-5.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wow rotateIn" data-wow-delay="0.5s" data-wow-duration="0.8s">
+            <h1 class="text-center font-weight-bold" id="info-covid"> INFORMASI COVID</h1>
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
                     <div class="carousel-inner">
@@ -261,7 +375,8 @@
                                     positif virus
                                     corona (Covid-19).
                                 </p>
-                                <a href="https://www.cnnindonesia.com/nasional/20200515203017-20-503936/rapid-test-di-18-pasar-makassar-204-pedagang-positif-corona"
+                                <a target="_blank"
+                                    href="https://www.cnnindonesia.com/nasional/20200515203017-20-503936/rapid-test-di-18-pasar-makassar-204-pedagang-positif-corona"
                                     class="btn btn-primary">Read More</a>
                             </div>
                         </div>
@@ -281,7 +396,8 @@
                                     dunia.
                                     Ini dibuktikan dengan meningkatnya kasus Covid-19 di sejumlah negara.
                                 </p>
-                                <a href="https://palu.tribunnews.com/2020/05/16/update-corona-global-sabtu-16-mei-2020-pagi-total-461-juta-kasus-angka-kematian-sentuh-308-ribu"
+                                <a target="_blank"
+                                    href="https://palu.tribunnews.com/2020/05/16/update-corona-global-sabtu-16-mei-2020-pagi-total-461-juta-kasus-angka-kematian-sentuh-308-ribu"
                                     class="btn btn-warning">Read More</a>
                             </div>
                         </div>
@@ -305,7 +421,8 @@
                                     kunjungan
                                     keluarga karena pandemi virus corona.
                                 </p>
-                                <a href="https://www.cnnindonesia.com/internasional/20200515182837-106-503907/aturan-perayaan-idulfitri-singapura-dan-malaysia-saat-corona"
+                                <a target="_blank"
+                                    href="https://www.cnnindonesia.com/internasional/20200515182837-106-503907/aturan-perayaan-idulfitri-singapura-dan-malaysia-saat-corona"
                                     class="btn btn-warning">Read More</a>
                             </div>
                         </div>
@@ -322,49 +439,71 @@
             </div>
         </div>
 
-        <div class="jumbotron bg-custom ">
-            <div>
-                <div>
-                    <h3 class="indonesia display-4 font-weight-bold">Indonesia</h3>
-                    <h3 class="berterimakasih indonesia display-4 font-weight-bold ">Berterima kasih</h1>
-                        <p>
-                            untuk semua tim pekerja media, ojol, kurir barang, penjaga toko, penjual makanan, supir
-                            dan
-                            petugas angkutan umum, tim petugas keamanan, dan pahlawan lain yang berjasa dalam
-                            pandemik
-                            ini. Kami ucapkan terima kasih atas jasa dan perlawanan nya terhadap covid-19!
-                        </p>
-                </div>
+        <div class="mt-5 mb-5">
+            <div class="container">
+                <h3 class="indonesia display-4 font-weight-bold">Indonesia</h3>
+                <h3 class="berterimakasih indonesia display-4 font-weight-bold ">Berterima Kasih</h1>
+                    <p>
+                        untuk semua tim pekerja media, ojol, kurir barang, penjaga toko, penjual makanan, supir
+                        dan
+                        petugas angkutan umum, tim petugas keamanan, dan pahlawan lain yang berjasa dalam
+                        pandemik
+                        ini. Kami ucapkan terima kasih atas jasa dan perlawanan nya terhadap covid-19!
+                    </p>
             </div>
 
-            <div class="row">
-                <div class="col-lg-auto">
-                    <div>
-                        <h3 class="stayhome display-5 font-weight-bold">#StayAtHome</h3>
-                        <p class="">
-                            jumlah masyarakat yang positif Covis-19 di Indonesia terus meningkat hingga saat ini.
-                            Maka
-                            tindakan preventif pun harus dilakukan secepat mungkin. Dengan aksi #StayAtHome, kita
-                            dapat bersama memutuskan domino penyebaran covid-19 dan kembali ke aktivitas semula. Yuk
-                            ambil tindakan mu dan simak #StayAtHome untuk mengetahui info lebih lanjut!
-                        </p>
-                    </div>
-                </div>
+            <div class="container">
+                <h3 class="stayhome display-5 font-weight-bold">#StayAtHome</h3>
+                <p class="">
+                    jumlah masyarakat yang positif Covis-19 di Indonesia terus meningkat hingga saat ini.
+                    Maka
+                    tindakan preventif pun harus dilakukan secepat mungkin. Dengan aksi #StayAtHome, kita
+                    dapat bersama memutuskan domino penyebaran covid-19 dan kembali ke aktivitas semula. Yuk
+                    ambil tindakan mu dan simak #StayAtHome untuk mengetahui info lebih lanjut!
+                </p>
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script type="text/javascript">
-            if (typeof document.onselectstart != "undefined") {
-                document.onselectstart = new Function("return false");
-            } else {
-                document.onmousedown = new Function("return false");
-                document.onmouseup = new Function("return true");
-            }
-        </script>
+        <footer>
+            <div class="container">
+                <div class="content-md">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <h5>Infrisanti</h5>
+                            <hr class="border">
+                        </div>
 
+                        <div class="col-md-3">
+                            <h5>Jason</h5>
+                            <hr class="border">
+                        </div>
+
+                        <div class="col-md-3">
+                            <h5>Alvi</h5>
+                            <hr class="border">
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Vincent</h5>
+                            <hr class="border">
+                        </div>
+                        <div class="col-md-12">
+                            <h5 class="text-center">&copy; Copyright by Us</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-sm">
+                    <h5 class="text-center">Infri-Jason-Alvi-Vincent</h5>
+                    <hr class="border">
+                    <h5 class="text-center">&copy; Copyright by Us</h5>
+                </div>
+            </div>
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

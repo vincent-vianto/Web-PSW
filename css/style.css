@@ -1,14 +1,54 @@
-/* kalau ada masalah tambahin class aj. klw tambah class, dy bakal detect kok */
+@import url(//db.onlinewebfonts.com/c/fd732bd7de8c4c02d9250cc4adffd9de?family=Kievit);
+
+@font-face {
+  font-family: "Kievit";
+  src: url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.eot");
+  src: url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.woff") format("woff"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/fd732bd7de8c4c02d9250cc4adffd9de.svg#Kievit") format("svg");
+}
 
 html {
   scroll-behavior: smooth;
+  top: 0;
+  left: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  margin-top: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Merriweather', serif;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #f72664;
+  border-bottom: 16px solid #f72664;
+  ;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#unloader {
+  display: none;
 }
 
 .header {
@@ -16,27 +56,45 @@ body {
   font-size: 50px;
 }
 
+.header-sm {
+  display: none
+}
+
 .card {
   margin: 0 auto;
   padding: 40px;
-  flex: auto;
-  display: block;
   text-align: center;
 }
 
-.contact, .about {
-  margin-top: 80px;
+.navbar-brand {
+  font-family: "Kievit";
+  font-size: 24px;
+}
+
+.navbar-brand img {
+  height: 30px;
 }
 
 .topnav {
   background-color: #333366;
   font-family: "Kievit";
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
 }
 
-.bg-transparent {
-  background-color: transparent;
+.nav-item {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-item:hover {
+  background-color: #f72664;
+  border-radius: 20px;
+  padding: 0 6px;
+}
+
+.bg-custom {
+  background-color: rgba(195, 161, 224, 0.548);
+  height: min-content;
 }
 
 .img-read {
@@ -50,20 +108,8 @@ body {
   margin-top: auto;
 }
 
-.col-6 {
-  font-size: auto;
-}
-
-.marg {
-  margin-top: 100px;
-}
-
-.col-xl-3 {
-  font-size: 15pt;
-}
-
-.row {
-  margin-top: 25px;
+.text-vincent {
+  font-size: 14.9px;
 }
 
 .kartu {
@@ -80,14 +126,38 @@ body {
   color: black;
 }
 
-.box-purple {
-  background-color: #cccccc;
+.box-content {
   background-size: cover;
   padding: 20px;
   width: fit-content;
   height: fit-content;
-  margin-top: 15%;
+  margin-top: 10%;
   width: 100%;
+}
+
+.box-content img {
+  width: 100%;
+}
+
+.content-list-img {
+  width: 150px !important;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content-sm {
+  display: none;
+}
+
+.box-contact {
+  background-size: cover;
+  padding: 20px;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 8%;
+  width: 100%;
+  background-color: #cccccc;
 }
 
 #content {
@@ -95,7 +165,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 20px;
+  top: 55px;
   overflow: hidden;
 }
 
@@ -103,6 +173,9 @@ body {
   resize: none;
 }
 
+#virus-img {
+  width: 100%;
+}
 
 .berterimakasih {
   color: rgb(255, 0, 0);
@@ -120,11 +193,95 @@ body {
 
 .carousel-item img {
   height: 500px;
+  object-fit: cover;
+}
+
+#info-covid {
+  margin-top: 100px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 330px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 330px;
+  width: 100%;
+}
+
+footer {
+  background-color: #333366;
+  color: #ffffff;
+  padding: 40px 50px;
+  width: 100%;
+}
+
+hr .border {
+  width: 75%;
+}
+
+
+@media(max-width : 1024px) {
+  .content-list-img {
+    width: 125px !important;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+@media(max-width : 769px) {
+  .content-list-img {
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 576px) {
+  .box-content img {
+    width: 100%;
+  }
+
+  .header-md {
+    display: none;
+  }
+
+  .nav-item:hover {
+    background-color: transparent
+  }
+
+
+  .header-sm {
+    display: block;
+    margin-bottom: 17px;
+  }
+
+  .content-md {
+    display: none;
+  }
+
+  .content-sm {
+    display: block;
+  }
+
+  .box-content {
+    margin-top: 30%;
+  }
+
+  #info-covid {
+    margin-top: 20px;
+  }
+
   .carousel-item img {
     height: 250px;
+    object-fit: cover;
   }
 
   .d-md-block {
@@ -133,6 +290,7 @@ body {
     color: white;
     text-align: center;
   }
+
   .d-md-block h5 {
     font-size: xx-small;
   }
@@ -143,5 +301,25 @@ body {
 
   .d-md-block a {
     font-size: xx-small;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
